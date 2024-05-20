@@ -1,0 +1,40 @@
+mkdir assignment3
+cd assignment3
+touch main.txt
+git init
+git add main.txt
+git status
+git commit –m "committing main.txt "
+git show-branch master
+git remote add Git-Assignment-3 git@github.com:visaltyagi/Git-Assignment-3.git
+git remote –v
+git branch
+ssh-keygen
+cd ..
+cd .ssh
+sudo cat id_rsa.pub
+git push Git-Assignment-3 master
+git branch Develop
+git branch F1
+git branch F2
+git branch
+git checkout Develop
+touch develop.txt
+git status
+git add develop.txt
+git commit –m "committing develop.txt file"
+git checkout F1
+touch f1.txt
+git status
+git add f1.txt
+git commit –m "committing f1.txt file"
+git checkout F2
+touch f2.txt
+git status
+git add f2.txt
+git commit –"committing f2.txt file"
+git push Git-Assignment-3 Develop F1 F2
+git checkout master
+git branch –D F2
+git branch
+git push Git-Assignment-3 --delete F2
